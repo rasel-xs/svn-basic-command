@@ -1,0 +1,7 @@
+checkout: svn checkout repo-url
+pulling from remote to local repository: svn up
+Show changed files: svn status
+add all files and folders recursively: svn add --force *
+commit new update: svn commit -m "message"
+
+For delete file: svn status | grep '^!' | awk '{print $2}' | xargs svn delete
